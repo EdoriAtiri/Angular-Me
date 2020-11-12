@@ -8,8 +8,11 @@
 
   <mat-card
     *ngFor="
-      let product of products | paginate: { itemsPerPage: 5, currentPage: p }
+      let product of products | paginate: { itemsPerPage: 5, currentPage: p };
+      let even = even;
+      let odd = odd
     "
+    [ngClass]="{ odd: odd, even: even }"
   >
     <mat-card-header>
       <mat-card-title>{{ product.name }}</mat-card-title>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angularme-store": {
+      "hosting": {
+        "angular-learn-app": [
+          "angularme-store"
+        ]
+      }
+    }
+  }
+}
